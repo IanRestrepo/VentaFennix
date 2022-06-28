@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SRC/CSS/login.css">
+    <title>VentaFennix</title>
+</head>
+    <body>
+        <div class="MainMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="/SRC/HTML/adminAccount.html">Account</a></li>
+            </ul>
+            <span id="Welcome">
+                <h2 class="Title"></h2>
+            </span>
+        </div>
+        <div class="MainContainer">
+            <span id="RegisterTT" ><h2 id="TxToChange">Log In | Account</h2></span>
+                <div class="divisor"></div>
+            <div id="FormContainer">
+                <input type="text" name="UserName" id="UserNameInpt" placeholder="UserName" class="Inpt" autocomplete="off"oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/,'')" required>
+                <input type="password" name="Pass" id="PasswordInpt" placeholder="Password" class="Inpt" autocomplete="off"oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/,'')" required="on">
+                <br>
+                <button class="Btn" id="btn">LogIn</button>
+                <br>
+                <h4 class="Alert" id="Alert">ERROR</h4>
+                <a href="/SRC/HTML/register.html" class="link">I Don't have an account</a>
+            </div>
+        </div>
+        <script src="/SRC/JS/LogIn.js"></script>
+    </body>
+</html>
